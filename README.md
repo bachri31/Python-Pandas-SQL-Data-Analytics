@@ -9,8 +9,8 @@ Il combine **SQLite** pour la structure de données et **Pandas** pour la manipu
 
 ### 1️⃣ Cloner le projet
 ```bash
-git clone https://github.com/DonB31/...
-cd ...
+git clone https://github.com/bachri31/Python-Pandas-SQL-Data-Analytics
+cd Python-Pandas-SQL-Data-Analytics
 ```
 
 
