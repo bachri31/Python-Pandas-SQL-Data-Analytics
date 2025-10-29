@@ -37,29 +37,9 @@ Selectionenr le kernel (Jupyter Notebook)
 ```bash
 python -m ipykernel install --user --name=sql_env --display-name "Python (sql_env)"
 ```
-.
-├── data/
-│   └── sales_data_sample.csv      # Dataset Kaggle
-│    
-│
-├── notebook/
-│   └── sql_requests.ipynb         # Analyses SQL et Pandas
-│
-├── src/
-│   ├── download_dataset.py        # Télécharge le dataset
-│   ├── create_tables_sqlite3.py   # Crée la table "ventes"
-│   └── insert_values.py           # Insère les données
-│
-├── requirements.txt
-├── database.db
-└── README.md
+
 
 Utilisation 
-Telecharger le dataset
-
-```bash
-python src/download_dataset.py
-```
 Créer la table dans SQLite
 ```bash
 python src/create_tables_sqlite3.py
