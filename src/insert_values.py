@@ -78,15 +78,15 @@ if __name__ == '__main__':
         for row in reader:
             values = tuple(row.get(col,"").strip() for col in table_cols)
             rows.append(values)
-        # print(rows[0][2])
 
     placeholders = ', '.join(["?"]*len(table_cols))
     sql = f"INSERT INTO ventes ({', '.join(table_cols)}) VALUES ({placeholders})"
     # print(sql)
+    # print(sql)
 
-    # cur.executemany(sql, rows) a faire une fois 
+    cur.executemany(sql, rows) #a faire une fois 
     con.commit()
-    cur.execute('Select orderID FROM ventes') # execute ne renvoie rien tout seul faut utiliser fetchall et print
+    cur.execute('Select * FROM ventes') # execute ne renvoie rien tout seul faut utiliser fetchall et print
     orders = [r for r in cur.fetchall()] # on ameliore la lisbilite avec une liste
     pprint(orders[:5])
     con.close()
